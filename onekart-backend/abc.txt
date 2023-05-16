@@ -1,0 +1,63 @@
+
+
+product 1 (10), product 2(20), product 3(30)
+
+
+
+Sai ->  
+
+ Cart->  product 1 ( 2)
+         product 2 (10)
+         product 3  (10)
+
+
+Checkout ->  Display the payment options
+
+
+Order ->   product 1 ( 2) -  order item
+           product 2 (10) - order item
+           product 3  (10) - order item 
+
+      ->   User
+
+
+Order Item :   product ,  quantity
+
+
+api :  /createOrder : 
+
+
+        
+    checkout ->  create Order items, we pass order items as a value to 
+    the property called order Items 
+
+
+     order =  {
+                    ordersItemList: [
+                          { 
+                                orderItemId: ObjectId("jhsdchsc")
+                                product: ObjectId("177eee"),
+                                quantity: 2
+                          },
+                          {
+                               orderItemId: ObjectId("jhsdchsc")
+                                product: ObjectId("14563455asdd"),
+                                quantity: 10
+                          },
+                          {
+                               orderItemId: ObjectId("jhsdchsc")
+                                product: ObjectId("1ssassdd77eee"),
+                                quantity: 10
+                          }
+
+                    ],
+                    user: ObjectId("7977899ABCGD"),
+                    shippingaddress1: '',
+                    shppingaddress2:'',
+                    state:'',
+                    landmark:''
+
+              }
+
+ 
+
